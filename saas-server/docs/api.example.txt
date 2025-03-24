@@ -1,0 +1,23 @@
+POST /api/auth/register - Send OTP for registration
+Payload:
+{
+  "email": "admin@example.com",
+  "password": "securePass123!",
+  "firstName": "Admin",
+  "lastName": "User",
+  "role": "admin",
+  "secret": "SUPER_SECRET_KEY"
+}
+
+POST /api/auth/verify-otp - Complete registration
+Payload:
+{
+  "sessionId": "SESSION_ID_FROM_REGISTRATION_RESPONSE",
+  "otp": "123456"
+}
+POST /api/auth/login - Generic login endpoint
+Payload:
+{
+  "email": "admin@example.com",
+  "password": "securePass123!"
+}

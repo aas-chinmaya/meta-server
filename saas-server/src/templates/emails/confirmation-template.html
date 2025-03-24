@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+</head>
+<body>
+    <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
+        <h2 style="color: #2c3e50;">{{header}}</h2>
+        <p style="font-size: 16px; line-height: 1.6;">{{{message}}}</p>
+        {{#if showLoginPrompt}}
+        <p style="margin-top: 30px;">
+            <a href="{{loginUrl}}" style="background-color: #3498db; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Login Now</a>
+        </p>
+        {{/if}}
+        <hr style="border: 0; border-top: 1px solid #ecf0f1; margin: 20px 0;">
+        <p style="color: #7f8c8d; font-size: 14px;">
+            If you didn't request this, please ignore this email or contact support.
+        </p>
+    </div>
+</body>
+</html>
